@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flores Animadas</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Evita que las flores se desplacen fuera del área visible */
+    }
+
+    #container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .flower {
+        position: absolute;
+        animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    #text {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <img src="https://www.pngkey.com/png/full/41-413404_rose-transparent-background-transparent-background-pink-rose.png" alt="Flower" class="flower" style="width: 100px; left: 10%; top: 30%;">
+    <img src="https://www.pngkey.com/png/full/41-413404_rose-transparent-background-transparent-background-pink-rose.png" alt="Flower" class="flower" style="width: 120px; left: 30%; top: 60%;">
+    <img src="https://www.pngkey.com/png/full/41-413404_rose-transparent-background-transparent-background-pink-rose.png" alt="Flower" class="flower" style="width: 80px; left: 50%; top: 20%;">
+    <img src="https://www.pngkey.com/png/full/41-413404_rose-transparent-background-transparent-background-pink-rose.png" alt="Flower" class="flower" style="width: 90px; left: 70%; top: 50%;">
+    <img src="https://www.pngkey.com/png/full/41-413404_rose-transparent-background-transparent-background-pink-rose.png" alt="Flower" class="flower" style="width: 110px; left: 90%; top: 40%;">
+
+    <button onclick="showText()">Presiona aquí Madre❤️</button>
+    <div id="text">Para mi Hermosa Mamá,
+
+
+        En este día especial de las madres, quiero expresarme para demostrar mi gran agradecimiento por todo lo que has hecho por mí a lo largo de estos 13 años, casi 14. Tu amor incondicional, tu apoyo constante hacia mi y tu sabiduría han sido pilares fundamentales en mi vida.
+        
+        Cada sacrificio que has hecho, cada consejo que me has dado y cada abrazo que me has dado han sido invaluables. Tu fuerza y ​​tu bondad son una inspiración constante para mí, y me siento increíblemente afortunado de tenerte como mi queridisima Madre❤️.
+        
+        A través de las dificultades de la vida, siempre has estado ahí para mí, dandome consuelo en los momentos difíciles y celebrando mis logros más grandes. Tu presencia es un regalo que valoro más de lo que las palabras pueden expresar.
+        
+        En este día, quiero recordarte cuánto te quiero y aprecio. Eres más que una madre para mí; eres mi amiga y mi héroe. Espero que hoy te sientas tan especial y amada como realmente eres.
+        
+        ¡Feliz Día de la Madre, Mami! Que este día esté lleno de alegría, amor y momentos preciosos. Te amo mucho
+        
+        
+        
+        
+        .</div>
+</div>
+
+<script>
+    function showText() {
+        var text = document.getElementById("text");
+        text.style.display = "block";
+    }
+</script>
+</body>
+</html>
